@@ -43,13 +43,13 @@
             position: relative;
             width: 100%;
             margin: 0 auto;
-            padding: 120px 60px 120px 60px;
+            padding: 140px 60px 150px 60px;
             overflow: visible;
         }
         
         .timeline-line {
             position: absolute;
-            top: 30%;
+            top: 100px;
             left: 30px;
             right: -160px;
             height: 4px;
@@ -60,7 +60,7 @@
                 rgba(51, 51, 51, 0.7) 92%, 
                 rgba(51, 51, 51, 0.3) 96%, 
                 transparent 100%);
-            transform: translateY(-50%);
+            transform: translateY(-2px);
             z-index: 0;
         }
         
@@ -83,11 +83,11 @@
         .event-vertical-line {
             position: absolute;
             left: 50%;
-            top: 30%;
-            height: 86px;
+            top: 100px;
+            height: 50px;
             width: 2px;
             background-color: #ccc;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
             z-index: -1;
         }
         
@@ -102,7 +102,7 @@
             z-index: 2;
             transition: all 0.3s ease;
             cursor: pointer;
-            top: 36px;
+            top: 86px;
         }
         
         .event-marker:hover {
@@ -131,7 +131,7 @@
             font-size: 16px;
             color: #333;
             position: absolute;
-            top: -76px;
+            top: 20px;
             left: 50%;
             transform: translateX(-50%);
             white-space: nowrap;
@@ -142,7 +142,7 @@
             font-size: 14px;
             color: #666;
             margin-bottom: 0;
-            margin-top: 86px;
+            margin-top: 136px;
             position: relative;
             z-index: 2;
         }
@@ -180,7 +180,7 @@
         
         .present-marker {
             position: absolute;
-            top: -104px;
+            top: -110px;
             left: 50%;
             transform: translateX(-50%);
             background-color: #4CAF50;
@@ -196,7 +196,7 @@
         
         .future-label {
             position: absolute;
-            top: 30%;
+            top: 90px;
             right: -70px;
             transform: translateY(-50%);
             color: #FF9800;
