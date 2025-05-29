@@ -43,32 +43,25 @@
             position: relative;
             width: 100%;
             margin: 0 auto;
-            padding: 120px 60px 80px 60px;
+            padding: 120px 60px 120px 60px;
             overflow: visible;
         }
         
         .timeline-line {
             position: absolute;
-            top: 46%;
+            top: 30%;
             left: 30px;
-            right: -120px;
+            right: -160px;
             height: 4px;
-            background: linear-gradient(to right, #e0e0e0 0%, #333 10%, #333 100%);
+            background: linear-gradient(to right, 
+                #e0e0e0 0%, 
+                #333 10%, 
+                #333 85%, 
+                rgba(51, 51, 51, 0.7) 92%, 
+                rgba(51, 51, 51, 0.3) 96%, 
+                transparent 100%);
             transform: translateY(-50%);
             z-index: 0;
-        }
-        
-        .timeline-arrow {
-            position: absolute;
-            top: 46%;
-            right: -130px;
-            transform: translateY(-50%);
-            width: 0;
-            height: 0;
-            border-left: 20px solid #333;
-            border-top: 15px solid transparent;
-            border-bottom: 15px solid transparent;
-            z-index: 3;
         }
         
         .timeline-events {
@@ -90,8 +83,8 @@
         .event-vertical-line {
             position: absolute;
             left: 50%;
-            top: 46%;
-            height: 40px;
+            top: 30%;
+            height: 86px;
             width: 2px;
             background-color: #ccc;
             transform: translate(-50%, -50%);
@@ -109,7 +102,7 @@
             z-index: 2;
             transition: all 0.3s ease;
             cursor: pointer;
-            top: 8px;
+            top: 36px;
         }
         
         .event-marker:hover {
@@ -138,7 +131,7 @@
             font-size: 16px;
             color: #333;
             position: absolute;
-            top: -50px;
+            top: -76px;
             left: 50%;
             transform: translateX(-50%);
             white-space: nowrap;
@@ -148,8 +141,8 @@
         .event-label {
             font-size: 14px;
             color: #666;
-            margin-bottom: 4px;
-            margin-top: 40px;
+            margin-bottom: 0;
+            margin-top: 86px;
             position: relative;
             z-index: 2;
         }
@@ -159,7 +152,7 @@
             padding: 4px 12px;
             border-radius: 12px;
             display: inline-block;
-            margin-top: 8px;
+            margin-top: 2px;
             font-weight: 500;
             position: relative;
             z-index: 2;
@@ -187,7 +180,7 @@
         
         .present-marker {
             position: absolute;
-            top: -80px;
+            top: -104px;
             left: 50%;
             transform: translateX(-50%);
             background-color: #4CAF50;
@@ -203,7 +196,7 @@
         
         .future-label {
             position: absolute;
-            top: 46%;
+            top: 30%;
             right: -70px;
             transform: translateY(-50%);
             color: #FF9800;
@@ -219,7 +212,7 @@
         
         @media (max-width: 768px) {
             .timeline-container {
-                padding: 40px 100px 40px 20px;
+                padding: 40px 140px 40px 20px;
             }
             
             .event-label {
@@ -238,7 +231,6 @@
         
         <div class="timeline-wrapper">
             <div class="timeline-line"></div>
-            <div class="timeline-arrow"></div>
             
             <div class="timeline-events">
                 <div class="event">
